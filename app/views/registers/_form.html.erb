@@ -1,0 +1,52 @@
+<%= form_for register, :html => {:multipart => true} do |f| %>
+  <% if register.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(register.errors.count, "error") %> prohibited this register from being saved:</h2>
+
+      <ul>
+      <% register.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field white">
+    <%= f.label :First_name %>
+    <%= f.text_field :First_name %>
+  </div>
+
+  <div class="field white">
+    <%= f.label :Last_name %>
+    <%= f.text_field :Last_name %>
+  </div>
+
+  <div class="field white">
+    <%= f.label :Age %>
+    <%= f.number_field :Age %>
+  </div>
+
+  <div class="field white">
+    <%= f.label :Address %>
+    <%= f.text_field :Address %>
+  </div>
+
+  <div class="field white">
+    <%= f.label :Education %>
+    <%= f.text_field :Education %>
+  </div>
+
+  <div class="field white">
+    <%= f.label :Occupation %>
+    <%= f.text_field :Occupation %>
+  </div>
+
+  <div class="field white">
+    <%= f.label :Image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="actions ">
+    <%= f.submit %>
+  </div>
+<% end %>

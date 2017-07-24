@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @register.First_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @register.Last_name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @register.Age %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @register.Address %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @register.Education %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @register.Occupation %>
+</p>
+
+
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag @register.image.url.to_s, size: "100x100" %>
+</p>
+
+<%= link_to 'Edit', edit_register_path(@register) %> |
+<%= link_to 'Back', registers_path %>

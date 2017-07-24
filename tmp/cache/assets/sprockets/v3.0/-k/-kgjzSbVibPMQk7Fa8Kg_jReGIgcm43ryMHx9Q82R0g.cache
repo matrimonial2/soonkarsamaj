@@ -1,0 +1,65 @@
+{:uriI"file://app/assets/stylesheets/demo.html?type=text/html&id=2338b7b1e12f124cf929aaafe205e3b2bbf96c4b9f4c8fb2fd57a42eaf6fc8b0:ET:load_pathI"app/assets/stylesheets;T:filenameI"%app/assets/stylesheets/demo.html;T:	nameI"	demo;T:logical_pathI"demo.html;T:content_typeI"text/html;T:sourceI"!<!DOCTYPE html>
+<html>
+<head>
+	<title>Soonkar Samaj</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+<header>
+
+<!-- Main Logo -->
+	<div>
+		<div>
+			<img src="logo.jpg" width="1290px" height="310px">
+		</div>
+	</div>
+
+<!-- Menu List -->
+	
+	<div class="menu">
+
+		<div class="container_12">
+			<center>
+			<nav>
+			<div class="grid_2">
+				<a href="demo.html"><img src="about.jpg"></a>
+			</div>
+			<div class="grid_2">
+				<a href="bride.html"><img src="about.jpg"></a>
+			</div>
+			<div class="grid_2">
+				<a href="bridal.html"><img src="about.jpg"></a>
+			</div>
+			<div class="grid_2">
+				<a href="registration.html"><img src="about.jpg"></a>
+			</div>
+			<div class="grid_2">
+				<a href="events.html"><img src="about.jpg"></a>
+			</div>
+			<div class="grid_2">
+				<a href="contacts.html"><img src="about.jpg"></a>
+			</div>
+			</nav>
+			</center>
+		</div>
+	</div>
+</header>
+
+<section>
+	<center>
+	<div class="slide">
+		
+	</div>
+	</center>
+</section>
+<footer>
+	
+</footer>
+
+</body>
+</html>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"3file-digest://app/assets/stylesheets/demo.html;TTF:charsetI"
+utf-8;F:digest"%I1ç4U^Î—-ÄXz`–í.ñ”i-‰)ï®ú⁄:À&:lengthi!:dependencies_digest"%ú|’†∆‰p%’AHÑ†∫˛ÄÂﬂë¬Pa†è0îÀ;!O™:idI"E2338b7b1e12f124cf929aaafe205e3b2bbf96c4b9f4c8fb2fd57a42eaf6fc8b0;F:
+mtimel+ÃÏeY

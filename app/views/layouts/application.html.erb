@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+    <%= stylesheet_link_tag 'application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application.js', 'data-turbolinks-track': 'reload' %>
+
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+<!--<![endif]-->
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+
+  $('#camera_wrap').camera({
+    loader: false,
+    pagination: false ,
+    minHeight: '400',
+    thumbnails: false,
+    height: '38.07291666666667%',
+    caption: false,
+    navigation: true,
+    fx: 'mosaic'
+  });
+
+  $("#owl").owlCarousel({
+    items : 3, //10 items above 1000px browser width
+    itemsDesktop : [995,1], //5 items between 1000px and 901px
+    itemsDesktopSmall : [767, 1], // betweem 900px and 601px
+    itemsTablet: [700, 1], //2 items between 600 and 0
+    itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+    navigation : true,
+    pagination :  false
+  }); 
+ }); 
+ 
+
+
+$(function() {
+    $(this).bind("contextmenu", function(e) {
+        e.preventDefault();
+    });
+});
+
+</script>
+
+</head>
+
+<body >
+<!--==============================
+              header
+=================================-->
+
+<header>
+    <div>
+
+          <%= image_tag 'logo.jpg', size: '1290x300'%>
+
+    </div>
+    <div class="clear"></div>
+  <section id="stuck_container">
+  <!--==============================
+              Stuck menu
+  =================================-->
+  
+    <div>
+        <div class="hello">
+            <nav>
+              <ul class="sf-menu">
+              	<li><%= link_to 'Home', root_path %></li>
+              	<li><%= link_to 'Bride', registers_bride_path %></li>
+              	<li><%= link_to 'Bridal', registers_bridal_path %></li>
+              	<li><%= link_to 'Register', new_register_path%></li>
+              	<li><%= link_to 'Events', photos_path%></li>
+              	<li><%= link_to 'Contacts', registers_contacts_path%></li>
+              	<li><%= link_to 'Admin', rails_admin_path%></li>
+                <li class="push_left">
+              <% if user_signed_in? %>
+                <%= current_user.email %> <br />
+                <%= link_to 'Sign Out', destroy_user_session_path %></li>
+              <%else%>
+                <%= link_to 'Sign in', new_user_session_path%> or <%= link_to 'Sign up', new_user_registration_path%></li>
+              <%end%>
+             </ul>
+            </nav>
+            
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>   
+     <div class="clear"></div>
+    </div> 
+
+  </section>
+</header>
+
+<%= yield 	%>
+
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container_12">
+    <div class="grid_12"> 
+      <h1 class="logo">
+        <a href="index.html">
+          LIGHT
+        </a>
+      </h1>
+      <div class="socials">
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google-plus"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+      </div>
+
+Website designed by <a href="#" rel="nofollow"></a></div>
+    </div>
+    <div class="clear"></div>
+  </div>  
+</footer>
+
+<a href="#" id="toTop" class="fa fa-angle-up"></a>
+</body>
+</html>

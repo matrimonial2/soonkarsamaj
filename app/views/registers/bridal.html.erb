@@ -1,0 +1,43 @@
+<section id="content"><div class="ic">More Website Templates @ TemplateMonster.com - September22, 2014!</div>
+  <div class="container_12">
+    <div class="grid_8">
+      <h3 class="center">Bridal</h3>
+    </div>
+    <div class="clear"></div>
+    <div class="grid_12 blue-color" >
+
+<%= search_form_for @search, url: registers_bridal_path do |f| %>
+  <div class="field">
+
+    <%= f.text_field :First_name_or_Last_name_or_Education_or_Occupation_or_Address_cont %>
+  </div>
+  <div class="actions"><%= f.submit "search"%></div>
+<% end %>
+
+    <% @registers.each do |register|%>
+      <div class="grid_6 alpha">
+        <div class="block-3 ">
+          <div class="">
+            First Name: <%= register.First_name %></br>
+            Last Name:  <%= register.Last_name%></br>
+            Age:        <%= register.Age %></br>
+            Address:    <%= register.Address %></br>
+            Education:  <%= register.Education %></br>
+            Occupation: <%= register.Occupation %></br>
+          </div>
+        </div>
+      </div>
+
+    <% end %>
+
+    
+    <div class="clear"></div>
+    <div class="grid_12">
+      <div class="block-4">
+        <div class="block-4_title">Life Group</div>Amus at magna non nunc tristique rhoncus. Aliquam nibh antegestas id dictum a, commodo luctus libero. Praesent faucibus malesuada faucibus. Donec laoreet metus id laoreeto alesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed 
+        <a href="#">Learn <br> More</a>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>

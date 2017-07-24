@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Photos</h1>
+
+<section id="content"><div class="ic">More Website Templates @ TemplateMonster.com - September22, 2014!</div>
+  <div class="container_12">
+    <div class="grid_12">
+      <h2 class="ta__center">Membership</h2>
+    </div>
+    <% @photos.each do |photo|%>
+    <div class="grid_3">
+        <div class="maxheight">
+          <%= image_tag photo.photo.url.to_s, :class => "white-color", size: "200x200" %>
+      </div>
+    </div>
+    <%end%>
+      
+    <div class="clear"></div>
+  </div>
+  <article class="block-1 white">
+    <div class="container_12">
+      <div class="grid_8">
+        <h3>Our Activities</h3>
+        <img src="images/page4_img5.jpg"  alt="" class="img_inner fleft offset__2">
+        <div class="extra_wrapper">
+           
+        </div>
+        <div class="clear sep-2"></div>
+        
+        <ul class="list-2 color1">
+          <li><a href="#">Amus at magna non nunc tristique rhoncus</a></li>
+          <li><a href="#">Praesent onec laoreet metus id laoreetoreto </a></li>
+          <li><a href="#">Tsuadaipsum dolor sit amet, consectetur </a></li>
+        </ul>
+      </div>
+      <div class="grid_4">
+        <div class="banner-2"><img src="images/page4_img6.jpg" alt="">
+          <div class="banner-2_bot">
+            <div class="banner-2_title">
+              
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </article>
+</section>
