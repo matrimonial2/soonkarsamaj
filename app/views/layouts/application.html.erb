@@ -13,34 +13,6 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <!--<![endif]-->
 <script>
- $(window).load(function(){
-  $().UItoTop({ easingType: 'easeOutQuart' });
-  $('#stuck_container').tmStickUp({});  
-
-  $('#camera_wrap').camera({
-    loader: false,
-    pagination: false ,
-    minHeight: '400',
-    thumbnails: false,
-    height: '38.07291666666667%',
-    caption: false,
-    navigation: true,
-    fx: 'mosaic'
-  });
-
-  $("#owl").owlCarousel({
-    items : 3, //10 items above 1000px browser width
-    itemsDesktop : [995,1], //5 items between 1000px and 901px
-    itemsDesktopSmall : [767, 1], // betweem 900px and 601px
-    itemsTablet: [700, 1], //2 items between 600 and 0
-    itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
-    navigation : true,
-    pagination :  false
-  }); 
- }); 
- 
-
-
 $(function() {
     $(this).bind("contextmenu", function(e) {
         e.preventDefault();

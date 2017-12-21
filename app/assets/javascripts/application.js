@@ -13,13 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require TMForm.js
-//= require cable.js
-//= require device.js
-//= require html5shiv.js
-//= require jquery-migrate-1.1.1.js
-//= require jquery.easing.1.3.js
-//= require jquery.equalheights.js
-//= require jquery.js
-//= require jquery.mobile.customized.min.js
-//= require_tree .

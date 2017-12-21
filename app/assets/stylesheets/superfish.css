@@ -49,17 +49,6 @@ nav {
 	margin-left: 36px;
 }
 
-.sf-menu>li+li:after {
-	position: absolute;
-	left: -22px;
-	top: 7px;
-	content: '';
-	background-color: #f2f2f2;
-	background: url(../images/menu_marker.png) 0 0 no-repeat;
-	width: 7px;
-	height: 7px;
-}
-
 .sf-menu>li>a{
 	font-weight: bold;
 	position: relative;

@@ -11,20 +11,20 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require style.css
- *= require camera.css
- *= require countdown.css
- *= require font-awesome.css
- *= require form.css
- *= require grid.css
- *= require ie.css
- *= require mixins.css
- *= require owl.carousel.css
- *= require stuck.css
- *= require superfish.css
- *= require variables.css
- *= require contact-form.css
- *= require scaffolds.scss
+ *= require style
+ *= require camera
+ *= require countdown
+ *= require font-awesome
+ *= require form
+ *= require grid
+ *= require ie
+ *= require mixins
+ *= require owl.carousel
+ *= require stuck
+ *= require superfish
+ *= require variables
+ *= require contact-form
+ *= require scaffolds
  *= require_self
  */
 
